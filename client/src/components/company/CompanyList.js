@@ -22,9 +22,13 @@ class CompanyList extends React.Component {
 
   render () {
     return (
-      <div className="ui container">
-        <h2>This is CompanyList</h2>
-        <div className="ui link cards">{this.props.companyList && <Comapnies list={[...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList]} />}</div>
+      <div className="company-list-componant">
+        <div className='hero-layer'>
+          <div className='header-title'>Explore</div>
+        </div>
+        <div className='container'>
+          <div className="ui link cards">{this.props.companyList && <Comapnies list={[...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList, ...this.props.companyList]} />}</div>
+        </div>
       </div>
     )
   }
